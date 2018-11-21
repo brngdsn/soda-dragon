@@ -1,0 +1,118 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>React-Redux-Observables Boilerplate</title><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"><meta property="og:title" content="React-Redux-Observables Boilerplate"><meta property="og:url" content="http://react-redux-observables-boilerplate.gilbarbara.com/"><meta property="og:description" content="Provides: react ^16.x, react-router ^4.x, redux ^3.x, redux-observables ^0.17"><meta property="og:image" content="http://react-redux-observables-boilerplate.gilbarbara.com/media/og-image-v1.png"><meta property="og:type" content="website"><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#000000"><meta name="apple-mobile-web-app-title" content="React-Redux-Observables"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#333333"><link rel="shortcut icon" href="/media/favicon.ico"><link rel="icon" type="image/png" href="/media/favicon-16x16.png" sizes="16x16"><link rel="icon" type="image/png" href="/media/favicon-32x32.png" sizes="32x32"><link rel="apple-touch-icon" sizes="180x180" href="/media/apple-touch-icon.png"><link rel="mask-icon" href="/media/safari-pinned-tab.svg" color="#764abc"><style type="text/css">.app { opacity: 0; }</style></head><body><div id="react" style="min-height: 100vh;"><style type="text/css">html {
+      -webkit-font-smoothing: antialiased;
+      font-size: 10px;
+      font-family: Roboto, sans-serif;
+      box-sizing: border-box
+    }
+    body {
+      background-color: #b7b7b7;
+      font-size: 14px;
+      line-height: 1.4;
+      color: #595959
+    }
+    *, :after, :before {
+      box-sizing: inherit
+    }
+    .loader {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -ms-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 256px;
+    }
+    .loader > svg {
+      height: 100%;
+      width: 100%;
+    }
+    .logo polygon {
+      -webkit-animation: swap-colors 2s infinite;
+      animation: swap-colors 2s infinite;
+    }
+    polygon.path-2 {
+      -webkit-animation-delay: 0.5s;
+      animation-delay: 0.5s;
+    }
+    polygon.path-3 {
+      -webkit-animation-delay: 1s;
+      animation-delay: 1s;
+    }
+    polygon.path-4 {
+      -webkit-animation-delay: 1.5s;
+      animation-delay: 1.5s;
+    }
+
+    .unsupported-browser {
+      background-color: #2b9591;
+      color: #fff;
+      padding: 1.5rem 3rem;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      max-width: 90%;
+      -ms-transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+    .unsupported-browser a {
+      color: #5fd9b4;
+    }
+    #message {
+      bottom: 5%;
+      padding: 0 5rem;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+    }
+    @-webkit-keyframes swap-colors {
+      0% {
+        fill: #00d8ff;
+      }
+
+      25% {
+        fill: #764abc;
+      }
+
+      50% {
+        fill: #ff0090;
+      }
+
+      75% {
+        fill: #cd0423;
+      }
+    }
+    @keyframes swap-colors {
+      0% {
+        fill: #00d8ff;
+      }
+
+      25% {
+        fill: #764abc;
+      }
+
+      50% {
+        fill: #ff0090;
+      }
+
+      75% {
+        fill: #cd0423;
+      }
+    }</style><div class="loader"><svg width="256px" height="177px" viewBox="0 0 256 177" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><g class="logo"><polygon fill="#CD0423" points="128.0007 -0.0004 190.6627 176.2066 255.9997 176.2066" class="path-4"></polygon><polygon fill="#FF0090" points="127.9998 -0.0004 126.8068 176.2066 191.9998 176.2066" class="path-3"></polygon><polygon fill="#764ABC" points="127.9998 -0.0004 62.4698 176.2066 127.9998 176.2066" class="path-2"></polygon><polygon fill="#00D8FF" points="-0.0002 176.2066 63.9998 176.2066 127.9998 -0.0004" class="path-1"></polygon></g></svg></div></div><script>// lazy load the stylesheet file
+  var cb = function() {
+    var l = document.createElement('link');
+    l.rel = 'stylesheet';
+    l.href = '/styles/app.77e7485.css';
+    var h = document.getElementsByTagName('head')[0];
+    h.parentNode.insertBefore(l, h);
+  };
+  var raf = window.requestAnimationFrame ||
+    window.mozRequestAnimationFrame ||
+    window.webkitRequestAnimationFrame ||
+    window.msRequestAnimationFrame;
+  if (raf) {
+    raf(cb);
+  }
+  else {
+    window.addEventListener('load', cb);
+  }</script><script src="/scripts/app.77e7485.js"></script><script src="/scripts/modernizr.77e7485.js"></script><noscript><div class="no-script">This website need Javascript. Please turn it on.</div></noscript></body></html>
