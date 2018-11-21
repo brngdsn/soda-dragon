@@ -48,35 +48,12 @@ export class App extends React.Component {
             'app--private': user.isAuthenticated,
           })}
         >
-          <Helmet
-            defer={false}
-            htmlAttributes={{ lang: 'pt-br' }}
-            encodeSpecialCharacters={true}
-            defaultTitle={config.title}
-            titleTemplate={`%s | ${config.name}`}
-            titleAttributes={{ itemprop: 'name', lang: 'pt-br' }}
-          />
-          <Header dispatch={dispatch} user={user} />
           <main className="app__main">
             <Switch>
               <Route exact path="/" component={Home} />
-              <RoutePublic
-                component={Login}
-                isAuthenticated={user.isAuthenticated}
-                path="/login"
-                exact
-              />
-              <RoutePrivate
-                component={Private}
-                isAuthenticated={user.isAuthenticated}
-                path="/private"
-                exact
-              />
               <Route component={NotFound} />
             </Switch>
           </main>
-          <Footer />
-          <SystemAlerts alerts={app.alerts} dispatch={dispatch} />
         </div>
       </ConnectedRouter>
     );
